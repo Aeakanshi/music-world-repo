@@ -202,9 +202,16 @@
   #outer-wrapper #header .menu #nav-toggle {
     top: -24px; }
 
+  #outer-wrapper .container#courses {
+    padding: 2em 0; }
+
+  #outer-wrapper .container#courses .cards {
+    top: inherit;
+    position: relative; }
+
   #outer-wrapper .cards .card {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 3em;
     float: none; }
 
   #outer-wrapper #header .menu .nav {
@@ -219,7 +226,20 @@
     float: none; }
 
   #outer-wrapper .popup {
-    width: 100%; } }
+    width: 100%; }
+
+  #outer-wrapper .slider .bx-wrapper .bx-caption {
+    border-bottom: 2.5em solid rgba(0, 0, 0, 0.7);
+    top: inherit;
+    bottom: 0;
+    width: 100%; }
+
+  #outer-wrapper .slider .bx-wrapper .bx-caption span {
+    font-size: 18px;
+    padding: .4em 1em; }
+
+  #outer-wrapper .cards .card .box {
+    width: 70%; } }
 .altText {
   display: none; }
 
@@ -610,7 +630,7 @@ h1 {
     transform: translate(-0.5px, 2.5px) rotate(1.5deg); }
   98% {
     transform: translate(-0.5px, 2.5px) rotate(-0.5deg); } }
-.cards .card .parallelogram .box {
+.cards .card .box {
   vertical-align: middle;
   text-align: center;
   padding: 3em 0;
@@ -623,7 +643,7 @@ h1 {
   background-position: center center;
   box-shadow: 13px 18px 21px rgba(0, 0, 0, 0.55); }
 
-.cards .card .parallelogram .box:hover {
+.cards .card .box:hover {
   transition: 3s all;
   animation-name: shake;
   animation-duration: 100ms;
@@ -631,7 +651,7 @@ h1 {
   animation-timing-function: ease-in-out;
   animation-delay: 0s; }
 
-.cards .card .parallelogram .box h2 {
+.cards .card .box h2 {
   font-size: 28px;
   /* padding: 2em 0;*/
   color: seashell;
@@ -640,7 +660,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
   /*'Alegreya Sans SC', sans-serif;*/ }
 
-.cards .card .parallelogram .box i, .cards .card .parallelogram .box img {
+.cards .card .box i, .cards .card .box img {
   -webkit-animation: pulsate 2s linear infinite;
   animation: pulsate 2s linear infinite;
   font-size: 4em; }

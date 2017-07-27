@@ -12,9 +12,16 @@ body .desktop{display:none}
 #outer-wrapper #header .menu #nav-toggle {
     top:-24px;
 }
+#outer-wrapper .container#courses {
+    padding: 2em 0;
+}
+#outer-wrapper .container#courses .cards {
+    top: inherit;
+    position: relative;
+}
 #outer-wrapper .cards .card {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 3em;
     float: none;
 } 
 #outer-wrapper #header .menu .nav {
@@ -30,4 +37,17 @@ body .desktop{display:none}
 }
 #outer-wrapper .popup {
     width:100%;
+}
+#outer-wrapper .slider .bx-wrapper .bx-caption {
+    border-bottom: 2.5em solid rgba(0, 0, 0, 0.7);
+    top:inherit;
+    bottom: 0;
+    width:100%;
+}
+#outer-wrapper .slider .bx-wrapper .bx-caption span {
+    font-size: 18px;
+    padding: .4em 1em;
+}
+#outer-wrapper .cards .card .box {
+    width:70%;
 }

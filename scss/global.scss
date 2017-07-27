@@ -457,7 +457,7 @@ h1 {
    
 }
 
-.cards .card .parallelogram .box {
+.cards .card .box {
    vertical-align: middle;
     text-align: center;
     padding: 3em 0;
@@ -470,7 +470,7 @@ h1 {
     background-position: center center;
     box-shadow: 13px 18px 21px rgba(0, 0, 0, 0.55);
 }
-.cards .card .parallelogram .box:hover {
+.cards .card .box:hover {
     transition: 3s all;
     animation-name: shake;
     animation-duration: 100ms;
@@ -478,7 +478,7 @@ h1 {
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
 }
-.cards .card .parallelogram .box h2 {
+.cards .card .box h2 {
     font-size: 28px;
    /* padding: 2em 0;*/
     color: seashell;
@@ -486,7 +486,7 @@ h1 {
     /*letter-spacing: .1em;*/
     font-family: $opn-sans;/*'Alegreya Sans SC', sans-serif;*/
 }
-.cards .card .parallelogram .box i,.cards .card .parallelogram .box img {
+.cards .card .box i,.cards .card .box img {
     -webkit-animation: pulsate 2s linear infinite;
     animation: pulsate 2s linear infinite;
    font-size: 4em;
