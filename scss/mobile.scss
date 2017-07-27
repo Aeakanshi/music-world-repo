@@ -1,0 +1,33 @@
+body .mobile{display:block}
+body .desktop{display:none}
+
+#outer-wrapper #header #logo {
+    width:100%;
+    text-align:left;
+}
+
+#outer-wrapper #header .menu {
+    width:100%;
+}
+#outer-wrapper #header .menu #nav-toggle {
+    top:-24px;
+}
+#outer-wrapper .cards .card {
+    width: 100%;
+    margin-bottom: 10px;
+    float: none;
+} 
+#outer-wrapper #header .menu .nav {
+    width: 100%;
+    float: none;
+    background: #3d3c3c;
+}
+#outer-wrapper #header .menu .nav li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    float: none;
+}
+#outer-wrapper .popup {
+    width:100%;
+}

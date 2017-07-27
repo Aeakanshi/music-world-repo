@@ -1,0 +1,188 @@
+/*________Hamburger________*/
+a.open-responsive-panel, a.close-responsive-panel {display: inline;}
+/*Hamburger Animated Mobile Nav Icon*/
+body #responsive-nav  {
+  font-size:20px;
+  right: 1026px;
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  /*opacity: 0.9;*/
+  display:block;
+  -moz-transform: translate3d(-1026px, 0, 0);
+  -ms-transform: translate3d(-1026px, 0, 0);
+  -o-transform: translate3d(-1026px, 0, 0);
+  transform: translate3d(-1026px, 0, 0);
+  -webkit-transform: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
+}
+
+.openResponsiveNav body #responsive-nav {
+    right:-30px;
+    top:100%;
+  /*  left: 0px;*/
+  /*-webkit-transform: translate(-30px, 0);*/
+  -moz-transform: translate3d(-30px, 0, 0);
+  -ms-transform: translate3d(-30px, 0, 0);
+  -o-transform: translate3d(-30px, 0, 0);
+  transform: translate3d(-30px, 0, 0);
+  -webkit-transform: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
+}
+#responsive-nav .nav {
+    width:200px;/*100%;*/
+}
+#responsive-nav .nav ul {float:none;}
+/*#responsive-nav .nav ul:first-child {
+  opacity:0.9;
+}*/
+#responsive-nav .nav ul {     
+    width: 100%;
+    padding:0px;/*5.07em 0px 1em 0px;*/
+    background: #333334;
+}
+#responsive-nav .nav ul li{
+  float: none;
+    text-align: left;
+    width:100%; 
+    position:relative;
+    display:block;
+    border: 1px solid #414141;
+    text-transform: uppercase;
+    box-sizing: border-box;
+/*  background-color: #333334;*/
+    background: url(../img/gif/nav.jpg) no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+#responsive-nav .nav ul li a {
+  letter-spacing: 1px; 
+  color: #fff;
+  font-weight: 600;
+  padding: 20px 30px 20px 8px;
+  font-size:16px;
+  font-size: 12pt;
+  vertical-align: top;
+  position:relative;
+  display:block;
+  font-family: 'Patrick Hand', cursive;;
+} 
+#responsive-nav .nav ul li a:hover {   
+  background-color: rgba(255, 255, 255, 0.26);
+  color: #000; 
+}
+#responsive-nav .nav ul li:last-child ,#responsive-nav .nav ul.sub-nav li:last-child {border-bottom:none;}
+
+
+
+/*--edit code start--*/
+.selected {   
+    background-color: #825f47 !important;
+    /* border-bottom: 1px solid #ffffd0; */
+    width: 100%;
+    padding: 5px 5px 0 5px;
+ 
+}
+
+#responsive-nav .nav li a span {
+  display: inline;
+  float: left;
+  text-align:center;
+/*padding: 0px 10px;*/
+  width:35px;
+}
+
+/*--sub-nav--*/
+
+#responsive-nav .nav ul.sub-nav {
+  width:100%;
+  display: none;
+  padding:0;
+  position:relative;
+/*  padding-left:15px;
+  border-bottom: 2px solid #fff;*/
+}
+#responsive-nav .nav ul.sub-nav li a {
+      padding:12px 0px 12px 55px;
+      font-weight:normal;
+      font-size:12px;
+}
+/*--sub sub-nav--*/
+/*#responsive-nav .nav ul.sub-nav ul span {
+  margin-right:15px;
+}
+#responsive-nav .nav ul li.inner-sub-nav span {
+    margin-right: 13px;
+}
+#responsive-nav .nav ul.sub-nav ul.sub-nav {
+  border-bottom: 1px solid #524639;
+}*/
+
+.nav ul li:hover > ul {
+    display: block;
+}
+
+/*--edit code end--*/
+
+.close-responsive-panel {
+    position: relative;
+    top: .5em;
+    left: 1em; 
+  } 
+/*-----------------------------------Hamburger Animated Mobile Nav Icon-----------------------------------*/
+#nav-toggle {
+  cursor: pointer;
+/*padding: 9px 26px 16px 0px;*/
+  position: absolute;
+/* left: 12px;
+  top: 31px;*/
+  right: 44px;
+  top: -100px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+/*border-radius: 25%;*/
+  height: 4px;/*5*/
+  width: 25px;
+  background:#5c5c74;/*$dark-brown*/
+  position: absolute;
+  z-index:11111;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -8px;/*-10*/ 
+}
+#nav-toggle span:after {
+  bottom: -8px;/*-10*/
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+  
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+  background:#5c5c74;
+  
+  border-radius: 0;
+  height: 3px;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+  
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+
+}
+
+
+
+/*-- pollyfill https://github.com/BetleyWhitehorne/CSS3MultiColumn --*/
